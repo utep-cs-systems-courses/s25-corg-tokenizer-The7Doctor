@@ -31,5 +31,6 @@ uimain: tokenizer.o history.o uimain.o
 
 clean:
 
-	rm -f *.o uimain
+	rm -f *.o uimain tokenizer history
+
 

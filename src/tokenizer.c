@@ -62,7 +62,7 @@ char **tokenize(char *str) {
     current = token_start(end);
   }
 
-  tokens[i] = NULL; // Null-terminate the token array
+  tokens[i] = NULL; 
   return tokens;
 }
 

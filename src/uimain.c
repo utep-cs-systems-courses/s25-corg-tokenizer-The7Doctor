@@ -1,9 +1,6 @@
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include "tokenizer.h"
-
 #include "history.h"
 
 
@@ -69,8 +66,6 @@ int main() {
     }
 
 
-
-    // Remove trailing newline character
     int len = 0;
     while (input[len] != '\0' && input[len] != '\n') len++;
     input[len] = '\0';
@@ -81,7 +76,6 @@ int main() {
       continue;
     }
 
-    // Recall history item
     if (input[0] == '!' && input[1] != '\0') {
       int id = strToInt(input + 1);
       char *history_entry = get_history(history, id);
